@@ -1,0 +1,127 @@
+h1, h2, h3, h4, p, li {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #444;
+}
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #1059ad;
+}
+
+h1, h2, h3 {
+    color: #1059ad;
+}
+
+h2 {
+    font-size: 56px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+li {
+    font-size: 16px;
+}
+
+/* footer p {
+    font-size: 12px;
+} */
+
+/* article header p {
+    font-style: italic;
+} */
+
+#author {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#copyright {
+    font-size: 12px;
+}
+
+.related-author {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ul {
+    list-style: none;
+} */
+
+.posts-decorations {
+    list-style: none;
+}
+
+.main-header {
+    background-color: #e5e5e5;
+}
+
+aside {
+    background-color: #e5e5e5;
+    border-top: 5px solid #1059ad;
+    border-bottom: 5px solid #1059ad;
+}
+
+body {
+    /* background-color: #caddff; */
+}
+
+/* .first-li {
+    font-weight: bold;
+} */
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+/* li:nth-child(even) { 
+    color: red;
+} */
+/*"odd" for inpairs, "even" for pairs */
+
+/* misconception: this won´t work! */
+article p:first-child {
+    color: red;
+}
+
+/* styling links */
+/* LVHA */
+a:link {
+    color: #1059ad;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1059ad;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline dotted blue;
+}
+
+a:active {
+    color: green;
+    background-color: black;
+    font-style: italic;
+}
