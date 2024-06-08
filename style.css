@@ -1,13 +1,42 @@
-h1, h2, h3, h4, p, li {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #444;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 32px;
     text-transform: uppercase;
     font-style: italic;
     color: #1059ad;
+}
+
+.main-header {
+    background-color: #e5e5e5;
+    padding: 20px 40px;
+    margin-bottom: 40px;
+    height: 80px;
+
+}
+
+article {
+    margin-bottom: 64px;
+}
+
+.post-header {
+    margin-bottom: 32px;
+}
+
+aside {
+    background-color: #e5e5e5;
+    border-top: 5px solid #1059ad;
+    border-bottom: 5px solid #1059ad;
+    padding: 40px 0;
+    width: 500px;
 }
 
 h1, h2, h3 {
@@ -16,10 +45,13 @@ h1, h2, h3 {
 
 h2 {
     font-size: 56px;
+    margin-bottom: 32px;
 }
 
 h3 {
     font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 h4 {
@@ -31,11 +63,32 @@ h4 {
 p {
     font-size: 20px;
     line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+ul, ol {
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 li {
     font-size: 16px;
+    margin-bottom: 10px;
 }
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* li:nth-child(even) { 
+    color: red;
+} */
+/*"odd" for inpairs, "even" for pairs */
 
 /* footer p {
     font-size: 12px;
@@ -67,36 +120,17 @@ li {
     list-style: none;
 }
 
-.main-header {
-    background-color: #e5e5e5;
-}
 
-aside {
-    background-color: #e5e5e5;
-    border-top: 5px solid #1059ad;
-    border-bottom: 5px solid #1059ad;
-}
 
-body {
-    /* background-color: #caddff; */
-}
+/* body {
+    background-color: #caddff;
+} */
 
 /* .first-li {
     font-weight: bold;
 } */
 
-li:first-child {
-    font-weight: bold;
-}
 
-li:last-child {
-    font-style: italic;
-}
-
-/* li:nth-child(even) { 
-    color: red;
-} */
-/*"odd" for inpairs, "even" for pairs */
 
 /* misconception: this won´t work! */
 article p:first-child {
@@ -124,4 +158,28 @@ a:active {
     color: green;
     background-color: black;
     font-style: italic;
+}
+
+
+/* Resolving conflicts */
+
+#copyright {
+    color: red;
+}
+
+.copyright {
+    color: blue;
+}
+
+.text {
+    color: yellow;
+}
+
+/* footer p {
+    color: green !important;
+} */
+
+.post-image {
+    width: 100%;
+    height: auto;
 }
